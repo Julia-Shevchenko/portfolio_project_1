@@ -2,8 +2,15 @@
     font-size: 10px;
 }
 
+@font-face {
+    font-family: "GothamPro";
+    src: url("../fonts/GothamPro-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "GothamPro", sans-serif;
 }
 
 .head-block {
@@ -28,6 +35,9 @@ body {
     color: #717EAB;
 }
 
+.header__search-area::placeholder {
+    font-family: "GothamPro", sans-serif;
+}
 
 .header__header-item {
     margin: 0 1.6rem;
@@ -119,6 +129,7 @@ body {
     display: inline-block;
     outline: none;
     border: none;
+    font-family: "GothamPro", sans-serif;
 }
 
 .header__search-button:hover {
@@ -133,18 +144,18 @@ body {
 }
 
 .head-block__title {
-    width: 38rem;
+    width: 39rem;
     line-height: 4.3rem;
     color: #0E2470;
-    font-size: 3rem;
+    font-size: 2.7rem;
     margin: 7.2rem 0 0 0;
     display: inline-block;
 }
 
 .head-block__subtitle {
     display: inline-block;
-    line-height: 1.8rem;
-    font-size: 1.4rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
     max-width: 19rem;
     color: #1D3178;
     margin: 0 0 auto 0;
@@ -182,6 +193,7 @@ body {
     font-size: 1.4rem;
     position: relative;
     margin: 0 0 0 2rem;
+    font-family: "GothamPro", sans-serif;
 }
 
 .head-block__button:hover {
@@ -199,7 +211,7 @@ body {
     padding: 2.2rem 2.5rem 2.2rem 2.5rem;
     border-radius: 1.8rem;
     position: relative;
-    left: 32rem;
+    left: 31rem;
     bottom: 5.7rem;
     box-shadow: 0px 0px 11px -3px rgba(34, 60, 80, 0.2);
 }
@@ -303,6 +315,7 @@ body {
     border-radius: 3rem;
     outline: none;
     border: none;
+    font-family: "GothamPro", sans-serif;
 }
 
 .header__search-banner-button:hover {
@@ -444,12 +457,12 @@ body {
 .how {
     background-image: url(../images/how_bg.png);
     background-repeat: no-repeat;
-    background-position: 50% 135%;
+    background-position: 50% 75%;
     background-size: 121%;
 }
 
 .container_how {
-    margin: 29rem auto 0 auto;
+    margin: 26.9rem auto 0 auto;
     text-align: center;
 }
 
@@ -462,7 +475,7 @@ body {
 }
 
 .how__block {
-    margin: 7rem 0 0 0;
+    margin: 6.7rem 0 0 0;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -566,7 +579,7 @@ body {
 .how__title {
     font-size: 2.4rem;
     margin: 0 auto;
-    width: 19rem;
+    width: 23rem;
     color: #0E2470;
 }
 
@@ -580,6 +593,7 @@ body {
     position: relative;
     margin: 5.9rem 0.5rem;
     display: inline-block;
+    font-family: "GothamPro", sans-serif;
 }
 
 .how__button_light {
@@ -721,7 +735,7 @@ body {
 
 .faq__title {
     font-size: 2.36rem;
-    max-width: 39rem;
+    max-width: 43rem;
     color: #0E2470;
     margin: 0 auto 3rem auto;
 }
@@ -733,17 +747,17 @@ body {
     align-items: flex-end;
     color: #1D3178;
     justify-content: space-between;
+    padding: 4rem 0 2.3rem 0;
 }
 
-.faq__acc-footer {
-    height: 2.55rem;
+.faq__accordeon {
     border-bottom: 2px solid #F0F0F5;
 }
 
 .faq__acc-body {
     font-size: 1.4rem;
     line-height: 2.5rem;
-    padding: 1.8rem 10rem 0 0;
+    padding: 0 10rem 2.3rem 0;
     height: 12rem;
     display: none;
     color: #41558D;
@@ -761,10 +775,372 @@ body {
     right: 1rem;
 }
 
-.faq__acc-mark_opened {
+.opened .faq__acc-mark {
     transform: rotate(135deg);
     bottom: 0.2rem;
 }
+
+.book__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 52rem;
+    margin: 11.7rem auto 0 auto;
+}
+
+.book__image {
+    width: 7rem;
+}
+
+.book__title_email {
+    width: 36rem;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1.8rem 0 0 0;
+    line-height: 2.5rem;
+    color: #0E2470;
+}
+
+.book__email-wrapper {
+    margin: 4.5rem 0 0 0;
+    background-color: #be405b;
+    height: 5.3rem;
+    width: 44.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F3F6FF;
+    border-radius: 4rem;
+}
+
+.book__input {
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: #F3F6FF;
+    border-radius: 4rem;
+    color: #6F7DAD;
+    padding: 0.1rem 0 0 2.4rem;
+}
+
+.book__input::placeholder {
+    color: #6F7DAD;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.book__input::placeholder {
+    font-family: "GothamPro", sans-serif;
+}
+
+.book__button {
+    background-color: #4B59FF;
+    border: none;
+    border-radius: 4rem;
+    outline: none;
+    height: 100%;
+    width: 21rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "GothamPro", sans-serif;
+}
+
+.book__button:hover {
+    background-color: #4661EB;
+    cursor: pointer;
+}
+
+.book__button:active {
+    background-color: #4A68FF;
+}
+
+.faq__acc-body_opened {
+    display: inline-block;
+}
+
+.try {
+    background-image: url(../images/try_bg.jpg);
+    background-size: 124%;
+    background-repeat: no-repeat;
+    padding: 10rem 0;
+    background-position: 68% 12rem;
+}
+
+.try__block {
+    background-color: #fff;
+    padding: 5.7rem 8.8rem;
+    box-shadow: 0px 14px 28px -14px rgba(34, 60, 80, 0.2);
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 0 0 0;
+    position: relative;
+    background-image: url(../images/clouds.png);
+    background-size: 59%;
+    background-repeat: no-repeat;
+    background-position: 121% 12%;
+}
+
+.try__block::before {
+    content: "";
+    display: block;
+    background-image: url(../images/rocket.png);
+    width: 50rem;
+    height: 36rem;
+    background-color: transparent;
+    position: absolute;
+    top: -7.5rem;
+    left: 55.7rem;
+    background-size: 108%;
+    background-repeat: no-repeat;
+    background-position-x: -30%;
+}
+
+.try__title {
+    line-height: 2.7rem;
+    font-size: 2.42rem;
+    max-width: 44rem;
+    color: #0E2470;
+}
+
+.try__subtitle {
+    font-size: 1.45rem;
+    line-height: 2.5rem;
+    max-width: 43rem;
+    margin: 2rem 0 0 0;
+    color: #0E2470;
+}
+
+.try__button-wrapper {
+    margin: 3.5rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 40rem;
+}
+
+.try__button {
+    font-size: 1.3rem;
+    padding: 1.8rem 2.8rem;
+    border: none;
+    outline: none;
+    border-radius: 4rem;
+    background-color: #4B59FF;
+    color: #fff;
+    font-family: "GothamPro", sans-serif;
+}
+
+.try__button:hover {
+    cursor: pointer;
+    background-color: #5966fa;
+}
+
+.try__button:active {
+    cursor: pointer;
+    background-color: #3842b9;
+}
+
+.try__button_light {
+    background-color: #F3F6FF;
+    color: #4B59FF;
+}
+
+.try__button_light:hover {
+    background-color: #e1e8fc;
+}
+
+.try__button_light:active {
+    background-color: #cedefc;
+}
+
+.cards__title {
+    margin: 13.3rem auto 0 auto;
+    width: 79rem;
+    font-size: 2.8rem;
+    text-align: center;
+    line-height: 3.6rem;
+    color: #0E2470;
+}
+
+.cards__subtitle {
+    margin: 2.4rem 0 0 auto;
+    display: inline-block;
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #0E2470;
+}
+
+.cards__wrapper {
+    display: flex;
+    margin: 7rem 0 0 0;
+    justify-content: space-between;
+}
+
+.cards__item {
+    border-radius: 1rem;
+    max-width: 24.4rem;
+    padding: 4.2rem 3.1rem;
+    box-shadow: 0px 8px 30px -7px rgba(34, 60, 80, 0.14);
+}
+
+.cards__image {
+    width: 4rem;
+    height: 4rem;
+}
+
+.cards__image_circle {
+    width: 5rem;
+    position: relative;
+    right: 1rem;
+}
+
+.cards__image_glass {
+    width: 5rem;
+}
+
+.cards__item-title {
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0 0;
+    line-height: 2rem;
+    color: #0E2470;
+}
+
+.cards__item-subtitle {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin: 1rem 0 0 0;
+    color: #6F7DAD;
+}
+
+.cards__advice-wrapper {
+    margin: 12.2rem auto 0 auto;
+    display: flex;
+    width: 90rem;
+}
+
+.cards__advice-item {
+    display: flex;
+    flex-direction: column;
+    width: 38rem;
+    margin: 0 0 0 6.6rem;
+}
+
+.cards__advice-title {
+    font-size: 2rem;
+    position: relative;
+    color: #0E2470;
+}
+
+.cards__advice-title::before {
+    content: "";
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: #0E2470;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.8rem;
+    right: 39.5rem;
+}
+
+.cards__advice-subtitle {
+    margin: 2.3rem 0 0 0;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #0E2470;
+}
+
+.try__mobile-image {
+    display: none;
+}
+
+.trial__title {
+    margin: 15rem 0 0 0;
+    text-align: center;
+    color: #0E2470;
+    font-size: 2.15rem;
+}
+
+.trial__subtitle {
+    display: block;
+    max-width: 54rem;
+    text-align: center;
+    margin: 2.4rem auto 0 auto;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #0E2470;
+}
+
+.trial__block {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0 0 0;
+}
+
+.trial__item {
+    border-bottom: 1px solid #D6DDED;
+    padding: 2.6rem 3.6rem 2.6rem 1.6rem;
+    font-size: 1.7rem;
+    max-width: 18rem;
+    min-width: 14rem;
+    color: #41558D;
+    line-height: 1.8rem;
+}
+
+.trial__blue {
+    display: inline-block;
+    color: #4B59FF;
+}
+
+.trial__video {
+    max-width: 82rem;
+    margin: 8rem auto 0 auto;
+    border-radius: 3rem;
+    background-color: #000;
+    display: block;
+}
+
+.trial__button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 7rem 0 0 0;
+}
+
+.trial__button {
+    background-color: #4B59FF;
+    color: #FFF;
+    border-radius: 3rem;
+    padding: 2rem 2.6rem;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.trial__button:hover {
+    background-color: #4A68FF;
+}
+
+.trial__button:active {
+    background-color: #4661EB;
+}
+
+.trial__button_light {
+    background-color: #F3F9FF;
+    color: #4B59FF;
+}
+
+.trial__button_light:hover {
+    background-color: #f7f8fc;
+}
+
+.trial__button_light:active {
+    background-color: #eaedf8;
+}
+
+.trial__button_mobile {
+    display: none;
+}
+
+
 
 
 
@@ -781,7 +1157,7 @@ body {
 
 @media (max-width: 1200px) {
     .header__search-area {
-        width: 21.4rem;
+        width: 23.4rem;
         right: 0;
     }
 
@@ -827,9 +1203,25 @@ body {
     .how {
         background-size: 170%;
     }
+
+    .cards__item {
+        max-width: 22.4rem;
+    }
+
+    .try__block::before {
+        width: 39rem;
+        left: 58rem;
+        top: -7rem;
+        background-size: 119%;
+        background-position-x: 42%;
+    }
 }
 
 @media (max-width: 992px) {
+    .header__search-area {
+        width: 21.9rem;
+    }
+
     .head-block__cloud {
         left: 27%;
         bottom: 4.7rem;
@@ -891,17 +1283,150 @@ body {
         justify-content: center;
     }
 
-    .header__search-area {
-        width: 19.4rem;
-    }
-
     .header__search-button {
         right: 0.6rem;
+    }
+
+    .try__block {
+        background-size: 46%;
+        background-position: 112% 236%;
+    }
+
+    .try__block::before {
+        width: 29rem;
+        left: 44rem;
+        top: 5rem;
+        background-size: 115%;
+        background-position-x: -44%;
+    }
+
+    .faq__title {
+        font-size: 4.36rem;
+        max-width: 61rem;
+        margin: 0 auto 3rem 0;
+    }
+
+    .faq__acc-head {
+        font-size: 2.6rem;
+        height: auto;
+        padding: 4rem 0 3.3rem 0;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .faq__acc-body {
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        height: auto;
+    }
+
+    .faq__acc-mark {
+        border-bottom: 3.5px solid #1D3178;
+        border-left: 3.5px solid #1D3178;
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .book__image {
+        width: 16rem;
+    }
+
+    .book__title_email {
+        width: 70rem;
+        font-size: 4rem;
+        line-height: 5.5rem;
+    }
+
+    .book__email-wrapper {
+        height: auto;
+        border-radius: 7rem;
+        width: 100%;
+    }
+
+    .book__input {
+        font-size: 3rem;
+        height: 10rem;
+        border-radius: 7rem;
+        width: 32rem;
+    }
+
+    .book__input::placeholder {
+        font-size: 3rem;
+    }
+
+    .book__button {
+        height: auto;
+        border-radius: 7rem;
+        font-size: 2rem;
+        font-family: "GothamPro", sans-serif;
+    }
+
+    .cards__title {
+        margin: 0.3rem auto 0 auto;
+        width: 69rem;
+    }
+
+    .cards__wrapper {
+        display: flex;
+        margin: 7rem 0 0 0;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .cards__item {
+        max-width: 49%;
+        margin: 1.3rem 0 0 0;
+    }
+
+    .cards__advice-wrapper {
+        margin: 4.2rem auto 0 auto;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cards__advice-subtitle {
+        margin: 2.3rem 0 3rem 0;
+    }
+
+    .trial__item {
+        padding: 1rem 2rem 1rem 0.6rem;
+        font-size: 1.3rem;
+        max-width: 13rem;
+        min-width: 1rem;
+    }
+
+    .trial__video {
+        max-width: 68rem;
+        margin: 5rem auto 0 auto;
+    }
+
+    .trial__button-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0 0 0;
+    }
+
+    .trial__button {
+        border-radius: 4rem;
+        padding: 3rem 3.6rem;
+        font-size: 2rem;
+        margin: 0 0 1rem 0;
+    }
+
+    .trial__button_light {
+        padding: 3rem 8rem;
     }
 }
 
 @media (max-width: 768px) {
     .header__header-item {
+        display: none;
+    }
+
+    .trial__button_light {
         display: none;
     }
 
@@ -977,7 +1502,7 @@ body {
 
     .head-block__subtitle {
         line-height: 2.4rem;
-        font-size: 2.2rem;
+        font-size: 2rem;
         max-width: 29rem;
         color: #9DA8C7;
         margin: 6rem 0 4rem 0;
@@ -1149,6 +1674,183 @@ body {
         width: 4rem;
         margin: 0 1rem 0 0;
     }
+
+    .book__email-wrapper {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book__button {
+        padding: 3rem 3rem;
+        width: 100%;
+        font-size: 3rem;
+        margin: 2rem 0 0 0;
+    }
+
+    .book__input {
+        width: 100%;
+    }
+
+    .book__title_email {
+        width: 52rem;
+    }
+
+    .try {
+        background-image: none;
+    }
+
+    .try__block::before {
+        display: none;
+    }
+
+    .try__block {
+        text-align: center;
+        align-items: center;
+        box-shadow: none;
+    }
+
+    .try__button-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .try__button_light {
+        margin: 1rem 0 0 0;
+    }
+
+    .try__button {
+        font-size: 2.3rem;
+        padding: 2.8rem 3.8rem;
+    }
+
+    .try__mobile-image {
+        display: block;
+        width: 100%;
+        height: 30rem;
+        background-image: url(../images/rocketmobile.png);
+        background-size: 170%;
+        background-position: 50% 17%;
+    }
+
+    .try__block {
+        margin: 0;
+    }
+
+    .container_try {
+        padding: 0;
+    }
+
+    .cards__wrapper {
+        margin: 0 0 0 0;
+    }
+
+    .cards__title {
+        width: 49rem;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .cards__subtitle {
+        margin: 5.4rem 0 0 auto;
+    }
+
+    .cards__item {
+        max-width: 100%;
+        position: relative;
+        padding: 2.2rem 3.1rem 4.2rem 10rem;
+        box-shadow: none;
+    }
+
+    .cards__item-subtitle {
+        font-size: 2.3rem;
+        line-height: 3rem;
+    }
+
+    .cards__item-title {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .cards__image {
+        position: absolute;
+        left: 2rem;
+        top: 5rem;
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .cards__image_circle {
+        width: 7rem;
+        height: 6rem;
+    }
+
+    .cards__image_glass {
+        width: 7rem;
+        height: 6rem;
+    }
+
+    .cards__advice-item {
+        padding: 4rem;
+        margin: 0 0 2.5rem 0;
+        box-shadow: 0px 0px 32px -18px rgba(34, 60, 80, 0.55);
+        border-radius: 2rem;
+    }
+
+    .cards__advice-title::before {
+        right: 31.5rem;
+    }
+
+    .trial__video {
+        display: none;
+    }
+
+    .trial__title {
+        text-align: left;
+        margin: 8rem 0 0 0;
+    }
+
+    .trial__subtitle {
+        max-width: 41rem;
+        text-align: left;
+        margin: 2.4rem 0 0 0;
+        font-size: 2rem;
+        line-height: 3.4rem;
+        color: #4c60a7;
+    }
+
+    .trial__item {
+        border: none;
+        font-size: 1.7rem;
+    }
+
+    .trial__block {
+        flex-wrap: wrap;
+    }
+
+    .trial__button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tiral__button_mobile {
+        color: #4B59FF;
+        background-color: #F3F6FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 2rem 0;
+    }
+
+    .trial__button-wrapper {
+        margin: 2rem auto 0 auto;
+        width: 47rem;
+    }
+
+    .trial__play {
+        margin: 0 1rem 0 0;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1161,7 +1863,7 @@ body {
     }
 
     .head-block__title {
-        width: 23rem;
+        width: 25rem;
         line-height: 3.55rem;
         font-size: 3rem;
         margin: 3rem 0 0 0;
@@ -1248,8 +1950,8 @@ body {
     }
 
     .descrition__subtitle {
-        font-size: 1.6rem;
-        line-height: 2.74rem;
+        font-size: 1.5rem;
+        line-height: 2.7rem;
         margin: 0.8rem 0 0 0;
     }
 
@@ -1263,7 +1965,7 @@ body {
 
     .how__title {
         font-size: 1.85rem;
-        margin: 53.9rem 0 0 0;
+        margin: 55rem 0 0 0;
         width: 100%;
         text-align: left;
     }
@@ -1290,7 +1992,7 @@ body {
 
     .how__button {
         padding: 2rem 3rem;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .how__play {
@@ -1310,5 +2012,214 @@ body {
         align-items: center;
         margin: 2.6rem 0 1.3rem 0;
         padding: 1.5rem 3rem;
+    }
+
+    .container_try {
+        padding: 0;
+    }
+
+    .faq__title {
+        font-size: 1.7rem;
+        margin: 7.6rem 0 0 0;
+        line-height: 2.3rem;
+    }
+
+    .faq__acc-head {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+        padding: 2rem 0 2rem 0;
+    }
+
+    .faq__acc-body {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        padding: 0 0.4rem 5.9rem 0;
+    }
+
+    .faq__acc-mark {
+        border-bottom: 3px solid #1D3178;
+        border-left: 3px solid #1D3178;
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+
+    .opened .faq__acc-mark {
+        top: 0.5rem;
+    }
+
+    .book__block {
+        width: auto;
+        margin: 6.7rem auto 0 auto;
+    }
+
+    .book__image {
+        width: 8rem;
+    }
+
+    .book__title_email {
+        width: 29rem;
+        font-size: 1.77rem;
+        line-height: 2.5rem;
+    }
+
+    .book__input::placeholder {
+        font-size: 1.5rem;
+    }
+
+    .book__email-wrapper {
+        margin: 2.7rem 0 0 0;
+    }
+
+    .book__input {
+        font-size: 1.5rem;
+        height: 6rem;
+    }
+
+    .book__button {
+        padding: 2rem 3rem;
+        font-size: 1.55rem;
+        margin: 1rem 0 0 0;
+    }
+
+    .try {
+        padding: 8rem 0 10rem 0;
+    }
+
+    .try__mobile-image {
+        background-repeat: no-repeat;
+        height: 25rem;
+        background-size: 191%;
+        background-position: 54% 27%;
+    }
+
+    .try__block {
+        margin: 0;
+        padding: 1.5rem;
+    }
+
+    .try__title {
+        line-height: 2.7rem;
+        font-size: 1.7rem;
+        max-width: 44rem;
+        color: #0E2470;
+    }
+
+    .try__subtitle {
+        line-height: 2.7rem;
+        max-width: 23rem;
+        margin: 1rem 0 0 0;
+    }
+
+    .try__button {
+        font-size: 1.55rem;
+        padding: 1.8rem 3.8rem;
+    }
+
+    .cards__title {
+        width: auto;
+        font-size: 2.2rem;
+        line-height: 2.8rem;
+        text-align: left;
+        margin: 0.9rem 0 0 0;
+    }
+
+    .cards__subtitle {
+        line-height: 2.6rem;
+        text-align: left;
+        margin: 1.8rem 0 3.6rem auto;
+    }
+
+    .cards__item {
+        padding: 0 3.1rem 0 5.9rem;
+        margin: 0;
+    }
+
+    .cards__image {
+        left: -0.4rem;
+        top: 3.3rem;
+        width: 4.4rem;
+        height: 4.4rem;
+    }
+
+    .cards__item-title {
+        font-size: 1.4rem;
+        line-height: 2.7rem;
+        margin: 2.4rem 0 0 0;
+    }
+
+    .cards__item-subtitle {
+        font-size: 1.3rem;
+        line-height: 2.64rem;
+        margin: 1rem 0 0 0;
+    }
+
+    .cards__image_circle {
+        left: -0.4rem;
+        top: 3.3rem;
+        width: 5.1rem;
+    }
+
+    .cards__image_glass {
+        left: 0.1rem;
+        top: 3.6rem;
+        width: 5rem;
+        height: 4rem;
+    }
+
+    .cards__advice-item {
+        width: auto;
+        padding: 3.3rem 3rem;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .cards__advice-title {
+        font-size: 1.42rem;
+    }
+
+    .cards__advice-subtitle {
+        margin: 2.7rem 0 1.4rem 0;
+        line-height: 1.9rem;
+    }
+
+    .cards__advice-title::before {
+        right: 0;
+        left: -1.5rem;
+        top: 0.5rem;
+    }
+
+    .trial__title {
+        margin: 3.3rem 0 0 0;
+        font-size: 1.7rem;
+    }
+
+    .trial__subtitle {
+        max-width: 25rem;
+        margin: 1.7rem 0 0 0;
+        font-size: 1.7rem;
+        line-height: 2.6rem;
+    }
+
+    .trial__block {
+        margin: 1.7rem 0 0 0;
+    }
+
+    .trial__item {
+        font-size: 1.8rem;
+        padding: 1rem 2rem 1rem 0;
+        line-height: 2rem;
+    }
+
+    .trial__button-wrapper {
+        width: 29.5rem;
+    }
+
+    .trial__button {
+        font-size: 1.6rem;
+        padding: 2rem 1.6rem;
+    }
+
+    .tiral__button_mobile {
+        margin: 0 0 1rem 0;
+        padding: 1.6rem 1.6rem;
     }
 }
